@@ -1,4 +1,4 @@
-import type { GatsbyConfig } from "gatsby";
+import type { GatsbyConfig, IPluginRefObject } from "gatsby";
 
 const config: GatsbyConfig = {
     siteMetadata: {
@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
             options: {
                 "icon": "src/images/icon.png"
             }
-        },
+        } as IPluginRefObject,
         "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp",
         {
             resolve: 'gatsby-source-filesystem',
@@ -21,7 +21,7 @@ const config: GatsbyConfig = {
                 "path": "./src/images/"
             },
             __key: "images"
-        },
+        } as IPluginRefObject,
         {
             resolve: 'gatsby-source-filesystem',
             options: {
@@ -29,7 +29,7 @@ const config: GatsbyConfig = {
                 "path": "./src/pages/"
             },
             __key: "pages"
-        }
+        } as IPluginRefObject
     ]
 };
 
