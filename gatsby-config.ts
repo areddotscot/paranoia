@@ -3,7 +3,7 @@ import type { GatsbyConfig, IPluginRefObject } from "gatsby";
 const config: GatsbyConfig = {
     siteMetadata: {
         title: `Paranoia`,
-        siteUrl: ``
+        siteUrl: `https://areddotscot-paranoia.github.io`
     },
     plugins: [
         "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap",
@@ -29,7 +29,16 @@ const config: GatsbyConfig = {
                 "path": "./src/pages/"
             },
             __key: "pages"
-        } as IPluginRefObject
+        } as IPluginRefObject,
+        {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+              fonts: [
+                "montserrat\:300,400,400i,700" // you can also specify font weights and styles
+              ],
+              display: 'swap'
+            }
+          } as IPluginRefObject
     ]
 };
 
