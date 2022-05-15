@@ -1,0 +1,11 @@
+$brand: #611be2;
+
+html {
+    @for $i from 1 through 360 {
+        @if $i % 10 == 0 {
+            $deg: $i / 10;
+            $color: adjust-hue($brand, $i);
+            --brand-color-#{$deg}: #{$color};
+        }
+    }
+}
