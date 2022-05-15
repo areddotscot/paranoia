@@ -2,12 +2,12 @@
     "name": "theme",
     "rounding": 4,
     "spacing": 20,
-    "defaultMode": "light",
+    "defaultMode": "dark",
     "global": {
         "colors": {
             "brand": {
-                "dark": "#7700cc",
-                "light": "#6600cc"
+                "dark": "var(--brand-color-11)",
+                "light": "var(--brand-color-11)"
             },
             "background": {
                 "dark": "#111111",
@@ -50,16 +50,16 @@
             "active-text": "text-strong",
             "selected-background": "brand",
             "selected-text": "text-strong",
-            "status-critical": "#FF4040",
-            "status-warning": "#FFAA15",
-            "status-ok": "#00C781",
+            "status-critical": "var(--brand-color-10)",
+            "status-warning": "var(--brand-color-12)",
+            "status-ok": "var(--brand-color-22)",
             "status-unknown": "#CCCCCC",
             "status-disabled": "#CCCCCC",
             "graph-0": "brand",
             "graph-1": "status-warning"
         },
         "font": {
-            "family": "\"Open Sans\"",
+            "family": "Montserrat",
             "size": "15px",
             "height": "20px",
             "maxWidth": "300px",
